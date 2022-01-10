@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medistore</title>
+    <style>
+        #post {
+            /* background-color: blue; */
+            background-color: rgb(63, 62, 62);
+            height: 600px;
+            width: 80%;
+            margin: auto;
+            margin-top: 60px;
+            border-radius: 20px;
+            justify-content: center;
+
+        }
+
+        #posttotal {
+            /* margin-top: 100px; */
+            padding-top: 40px;
+        }
+
+        .postitems {
+            text-align: center;
+            margin: auto;
+            width: 80%;
+            height: 70px;
+            margin-top: 20px;
+            background-color: rgb(131, 131, 209);
+            color: white;
+            font-weight: bolder;
+            box-shadow: 2px 4px black ;
+            border-radius: 12px;
+
+        }
+
+        body {
+            background-color: black;
+            background-image: url(pictures/medistore2.png);
+            /* filter: invert(100%); */
+            background-repeat: no-repeat;
+            background-size: 20% 20%;
+        
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: rgb(0, 0, 0);
+        }
+
+        .header {
+
+            background-color: rgba(105, 107, 231, 0.897);
+            height: 50px;
+            width: 100%;
+            margin-top: 0px;
+            position: sticky;
+            top: 0px;
+        }
+
+        #navbar {
+            /* border-color: 2px solid rgb(12, 12, 12); */
+            float: right;
+            font-size: large;
+            background-color: black;
+            border-radius: 12px;
+            color: white;
+            margin-right: 5%;
+            margin-top: 10px;
+            padding: 5px;
+            /* border: 2px solid red; */
+        }
+
+        .mid {
+            height: 40px;
+            width: 20%;
+            border-radius: 12px;
+            background-color: whitesmoke;
+            color: black;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 15px;
+            box-shadow: 2px 3px blue;
+            /* display: flexbox; */
+        }
+
+        .total {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        #name {
+            height: 40px;
+            margin: 30px;
+            width: 60%;
+            color: black;
+            padding: 5px;
+            border-radius: 12px;
+
+        }
+
+        .search1 {
+            height: 50px;
+            margin-top: 67px;
+            background-color: rgb(95, 108, 228);
+            color: white;
+            padding: 5px;
+            border-radius: 12px;
+            width: 28%;
+
+        }
+
+        .search2 {
+            height: 52px;
+
+            background-color: rgb(95, 108, 228);
+            color: white;
+            padding: 5px;
+            border-radius: 12px;
+            width: 13%;
+
+        }
+
+        #buy {
+            height: 32px;
+
+            background-color: rgb(95, 108, 228);
+            color: white;
+            padding: 5px;
+            border-radius: 12px;
+            width: 60%;
+            margin: auto;
+
+            display: block;
+
+        }
+
+        .midbox {
+            height: 600px;
+            width: 100%;
+            background-color: rgb(63, 62, 62);
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            margin-top: 0%;
+            border-radius: 30px;
+        }
+
+        #tale {
+            margin: 30px;
+            list-style: none;
+            height: 300px;
+            color: rgb(255, 244, 244);
+            text-align: center;
+        }
+
+        #tale1 {
+
+            margin: 30px;
+            list-style: none;
+            height: 300px;
+            color: white;
+            text-align: center;
+
+
+
+        }
+
+        #tale2 {
+
+            margin: 30px;
+            list-style: none;
+            height: 300px;
+            color: white;
+            text-align: center;
+            /* visibility: hidden; */
+        }
+
+        #tale3 {
+
+            margin: 30px;
+            list-style: none;
+            height: 300px;
+            color: white;
+            text-align: center;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+
+        #tale4 {
+
+            margin: 30px;
+            list-style: none;
+            height: 300px;
+            color: white;
+            text-align: center;
+            /* display: none; */
+        }
+
+        .all {
+            width: 90%;
+            margin: 30px;
+            list-style: none;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        tr,
+        td,
+        th {
+            padding: 5%;
+            width: 3%;
+            color: rgb(244, 250, 250);
+            font-size: medium;
+            font-weight: bolder;
+        }
+
+        /* #left{
+            height: 500px;
+            width: 90%;
+            background-color: coral;
+            margin-top: 70px;
+            justify-content: center;
+            align-items: center;
+        } */
+        .lefttop {
+            height: 40px;
+            justify-content: center;
+            text-align: center;
+            margin-top: 70px;
+            width: 80%;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid white;
+
+            color: white;
+            box-shadow: 2px 3px rgb(21, 62, 197);
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 12px;
+            margin-left: 2%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .rightmid {
+            background-color: rgb(63, 62, 62);
+            height: 600px;
+            width: 80%;
+            margin: auto;
+            margin-top: 60px;
+            border-radius: 20px;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        .deliver {
+            margin: 20px;
+            height: 25px;
+
+
+        }
+
+        .leftmid {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            width: 80%;
+            background-color: rgb(63, 62, 62);
+            margin-top: 60px;
+            margin-left: 10%;
+            border-radius: 20px;
+        }
+
+        .care {
+            margin: auto;
+            margin-top: 20px;
+            height: 50px;
+            padding: 5px;
+            width: 80%;
+            border-radius: 12px;
+            justify-content: center;
+
+
+        }
+
+        .rightlow {
+            display: grid;
+            width: 80%;
+            margin: auto;
+            margin-right: 0%;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        #carttable {
+            text-align: center;
+            background-color: rgb(87, 55, 14);
+            color: black;
+        }
+
+        .box {
+            height: 800px;
+        }
+        #img{
+            width: 10%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <img id="img" src="pictures/logo.png" alt="logo">
+        
+
+        <span id="navbar"></span>
+    </div>
+
+    <div class="mid">Medistore</div>
+    <div class="total">
+        <div class="box" id="left">
+            <div class="lefttop">Available Products</div>
+            <div class="leftmid">
+                <button class="care" id="btn1" onclick="dc()">Diabetes Care</button>
+                <button class="care" id="btn2" onclick="c()">Cardiac</button>
+                <button class="care" id="btn3" onclick="cc()">Covid Care</button>
+                <button class="care" id="btn4" onclick="bc()">Baby Care </button>
+            </div>
+        </div>
+        <div class="box" id="midmid"><input type="text" id="name" placeholder="Search Medicine Here" onkeyup="sch()">
+            <button class="search1" id="search">SEARCH</button>
+            <div class="midbox" id="midbox">
+
+                <table class="all" id="tale">
+                    <tbody>
+                        <tr>
+                            <th>Medicine </th>
+                            <th>Price</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>Volini</td>
+                            <td>10</td>
+                            <td><button onclick="med1(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Paracetemol</td>
+                            <td>13</td>
+                            <td><button onclick="med1(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Boroline</td>
+                            <td>20</td>
+                            <td><button onclick="med1(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Eno</td>
+                            <td>7</td>
+                            <td><button onclick="med1(this)">Add To Cart</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <table class="all" id="tale1" style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <th>Medicine </th>
+                            <th>Price(per packet)</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>INSULIN</td>
+                            <td>1800</td>
+                            <td><button onclick="med2(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>METFORMIN</td>
+                            <td>580</td>
+                            <td><button onclick="med2(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>STARCH BLOCKERS PILLS</td>
+                            <td>450</td>
+                            <td><button onclick="med2(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>AMYLIN ANANLOGS</td>
+                            <td>700</td>
+                            <td><button onclick="med2(this)">Add To Cart</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <table class="all" id="tale2" style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <th>Medicine </th>
+                            <th>Price</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>DIGOXIN</td>
+                            <td>250</td>
+                            <td><button onclick="med3(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>DIURETICS</td>
+                            <td>300</td>
+                            <td><button onclick="med3(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>INOTROPIC</td>
+                            <td>200</td>
+                            <td><button onclick="med3(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>COZZER</td>
+                            <td>89</td>
+                            <td><button onclick="med3(this)">Add To Cart</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <table class="all" id="tale3" style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <th>Medicine </th>
+                            <th>Price</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>MASK BOX(100PC)</td>
+                            <td>200</td>
+                            <td><button onclick="med4(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>SANITIZER BOTTLE</td>
+                            <td>130</td>
+                            <td><button onclick="med4(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>OXYGEN CYLINDER</td>
+                            <td>1800</td>
+                            <td><button onclick="med4(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>OXYMETER</td>
+                            <td>460</td>
+                            <td><button onclick="med4(this)">Add To Cart</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <table class="all" id="tale4" style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <th>Medicine </th>
+                            <th>Price</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>BABY SHAMPOO</td>
+                            <td>200</td>
+                            <td><button onclick="med5(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>BABY OIL</td>
+                            <td>150</td>
+                            <td><button onclick="med5(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>BABY CREAM</td>
+                            <td>180</td>
+                            <td><button onclick="med5(this)">Add To Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>BABY NUTRIENTS</td>
+                            <td>500</td>
+                            <td><button onclick="med5(this)">Add To Cart</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div class="box" id="left">
+            <div class="lefttop">Cart</div>
+            <div id="pre">
+                <div class="rightmid">
+                    <input type="text" class="deliver" id="billname" placeholder="Enter username">
+                    <input type="text" class="deliver" id="billaddress" placeholder="Enter Address">
+                    <input type="text" class="deliver" id="password" onblur="pass()" placeholder="Enter password">
+                    <div class="rightlow">
+                        <div id="cname"></div>
+                        <!-- <div id="cprice"></div> -->
+                    </div>
+                    <button id="buy" onclick="buy()">Buy Now</button>
+                </div>
+            </div>
+            <div id="post">
+                <div id="posttotal">
+                    <div class="postitems" id="post1"></div>
+                    <div class="postitems" id="post2"></div>
+                    <div class="postitems" id="post3"></div>
+                    <div class="postitems" id="post4"></div>
+                    <div class="postitems" id="post5"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+    {
+        var total = 0;
+        var meds = [];
+        var prices = [];
+        var a = document.getElementById("tale");
+        var b = document.getElementById("tale1")
+        b.style.display = "none"
+        var ca = document.getElementById("tale2")
+        ca.style.display = "none"
+        var d = document.getElementById("tale3")
+        d.style.display = "none";
+        var e = document.getElementById("tale4")
+        var post = document.getElementById("post");
+        e.style.display = "none";
+        var post = document.getElementById("post");
+        post.style.display = "none";
+
+
+        btn1.style.color = "black";
+        btn2.style.color = "black";
+        btn3.style.color = "black";
+        btn4.style.color = "black";
+    }
+    function dc() {
+
+        a.style.display = "none";
+        ca.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "none";
+        b.style.display = "block";
+        btn1.style.color = "red";
+        btn2.style.color = "black";
+        btn3.style.color = "black";
+        btn4.style.color = "black";
+
+
+
+    }
+    function c() {
+
+        a.style.display = "none";
+        b.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "none";
+        ca.style.display = "block";
+        btn2.style.color = "red";
+        btn1.style.color = "black";
+        btn3.style.color = "black";
+        btn4.style.color = "black";
+
+
+    }
+    function cc() {
+        a.style.display = "none";
+        ca.style.display = "none";
+        b.style.display = "none";
+        e.style.display = "none";
+        d.style.display = "block";
+        btn3.style.color = "red";
+        btn2.style.color = "black";
+        btn1.style.color = "black";
+        btn4.style.color = "black";
+
+
+
+    }
+    function bc() {
+        a.style.display = "none";
+        ca.style.display = "none";
+        b.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "block";
+        btn4.style.color = "red";
+        btn2.style.color = "black";
+        btn1.style.color = "black";
+        btn3.style.color = "black";
+
+    }
+    function med1(pick1) {
+        var alltr = pick1.parentElement.parentElement;
+        var alltd = alltr.getElementsByTagName("td");
+        var p = alltr.rowIndex;
+
+
+        // var a = document.getElementById("tale");
+        var b = alltr.getElementsByTagName("td")[0];
+        var c = alltr.getElementsByTagName("td")[1];
+        // alltr.getElementsByTagName("td")[2].disabled=true;
+        // d.disabled="true";
+        alltr.getElementsByTagName("td")[2].style.visibility="hidden";
+    
+        
+        meds.push(b.innerHTML);
+        prices.push(c.innerHTML);
+
+        total = total + parseInt(c.innerHTML);
+        // alert(meds)
+        // alert(temp1)
+        // for (i = 0; i < l; i++) {
+        //     temp1 = temp1 + meds[i] + "<br>";
+        //     temp2 = temp2 + prices[i] + "<br>";
+        // }
+        // document.getElementById("cname").innerHTML = b.innerHTML;
+        // document.getElementById("cprice").innerHTML = c.innerHTML;
+        var temp1 = '<table id="carttable">';
+        temp1 += "<tr>";
+        temp1 += "<th>item</th>";
+        temp1 += "<th>Price</th>";
+
+        // temp1 += "<th>Action</th>";
+        temp1 += "</tr>";
+        var n = meds.length;
+        for (i = 0; i < n; i++) {
+            temp1 += "<tr>";
+            temp1 += "<td>" + meds[i] + "</td>";
+
+            temp1 += "<td>" + prices[i] + "</td>";
+
+
+            // temp1 += '<td><button onclick="add1(this)" >+</button></td>';
+            // temp1 += '<td><button onclick="add2(this)" >-</button></td>';
+            // temp1 += '<td><button id="qty" >'+quantity[i]+'</button></td>';
+            temp1 += "</tr>";
+
+        }
+        temp1 += "<tr>";
+        temp1 += "<td>" + "Total Price" + "</td>";
+        temp1 += "<td>" + total + "</td>";
+        temp1 += "</tr>";
+
+        temp1 += "</table>";
+        temp1 += "</table>";
+        document.getElementById("cname").innerHTML = temp1;
+
+
+    }
+    function med2(pick2) {
+        var alltr = pick2.parentElement.parentElement;
+        var alltd = alltr.getElementsByTagName("td");
+        var p = alltr.rowIndex;
+        alltr.getElementsByTagName("td")[2].style.visibility="hidden";
+
+
+        // var a = document.getElementById("tale");
+        var b = alltr.getElementsByTagName("td")[0];
+        var c = alltr.getElementsByTagName("td")[1];
+        meds.push(b.innerHTML);
+        prices.push(c.innerHTML);
+
+        total = total + parseInt(c.innerHTML);
+        // alert(meds)
+        // alert(temp1)
+        // for (i = 0; i < l; i++) {
+        //     temp1 = temp1 + meds[i] + "<br>";
+        //     temp2 = temp2 + prices[i] + "<br>";
+        // }
+        // document.getElementById("cname").innerHTML = b.innerHTML;
+        // document.getElementById("cprice").innerHTML = c.innerHTML;
+        var temp1 = '<table id="carttable">';
+        temp1 += "<tr>";
+        temp1 += "<th>item</th>";
+        temp1 += "<th>Price</th>";
+
+        // temp1 += "<th>Action</th>";
+        temp1 += "</tr>";
+        var n = meds.length;
+
+        for (i = 0; i < n; i++) {
+            temp1 += "<tr>";
+            temp1 += "<td>" + meds[i] + "</td>";
+
+            temp1 += "<td>" + prices[i] + "</td>";
+
+            // temp1 += '<td><button onclick="add1(this)" >+</button></td>';
+            // temp1 += '<td><button onclick="add2(this)" >-</button></td>';
+            // temp1 += '<td><button id="qty" >'+quantity[i]+'</button></td>';
+            temp1 += "</tr>";
+
+        }
+        temp1 += "<tr>";
+        temp1 += "<td>" + "Total Price" + "</td>";
+        temp1 += "<td>" + total + "</td>";
+        temp1 += "</tr>";
+
+        temp1 += "</table>";
+        document.getElementById("cname").innerHTML = temp1;
+    }
+    function med3(pick2) {
+        var alltr = pick2.parentElement.parentElement;
+        var alltd = alltr.getElementsByTagName("td");
+        var p = alltr.rowIndex;
+        alltr.getElementsByTagName("td")[2].style.visibility="hidden";
+
+
+        // var a = document.getElementById("tale");
+        var b = alltr.getElementsByTagName("td")[0];
+        var c = alltr.getElementsByTagName("td")[1];
+        meds.push(b.innerHTML);
+        prices.push(c.innerHTML);
+        total = total + parseInt(c.innerHTML);
+
+        // alert(meds)
+        // alert(temp1)
+        // for (i = 0; i < l; i++) {
+        //     temp1 = temp1 + meds[i] + "<br>";
+        //     temp2 = temp2 + prices[i] + "<br>";
+        // }
+        // document.getElementById("cname").innerHTML = b.innerHTML;
+        // document.getElementById("cprice").innerHTML = c.innerHTML;
+        var temp1 = '<table id="carttable">';
+        temp1 += "<tr>";
+        temp1 += "<th>item</th>";
+        temp1 += "<th>Price</th>";
+
+        // temp1 += "<th>Action</th>";
+        temp1 += "</tr>";
+        var n = meds.length;
+        for (i = 0; i < n; i++) {
+            temp1 += "<tr>";
+            temp1 += "<td>" + meds[i] + "</td>";
+
+            temp1 += "<td>" + prices[i] + "</td>";
+
+
+            // temp1 += '<td><button onclick="add1(this)" >+</button></td>';
+            // temp1 += '<td><button onclick="add2(this)" >-</button></td>';
+            // temp1 += '<td><button id="qty" >'+quantity[i]+'</button></td>';
+            temp1 += "</tr>";
+
+        }
+        temp1 += "<tr>";
+        temp1 += "<td>" + "Total Price" + "</td>";
+        temp1 += "<td>" + total + "</td>";
+        temp1 += "</tr>";
+
+        temp1 += "</table>";
+        document.getElementById("cname").innerHTML = temp1;
+    }
+    function med4(pick2) {
+        var alltr = pick2.parentElement.parentElement;
+        var alltd = alltr.getElementsByTagName("td");
+        var p = alltr.rowIndex;
+        alltr.getElementsByTagName("td")[2].style.visibility="hidden";
+        alltr.getElementsByTagName("td")[2].style.visibility="hidden";
+
+
+        // var a = document.getElementById("tale");
+        var b = alltr.getElementsByTagName("td")[0];
+        var c = alltr.getElementsByTagName("td")[1];
+        meds.push(b.innerHTML);
+        prices.push(c.innerHTML);
+        total = total + parseInt(c.innerHTML);
+
+        // alert(meds)
+        // alert(temp1)
+        // for (i = 0; i < l; i++) {
+        //     temp1 = temp1 + meds[i] + "<br>";
+        //     temp2 = temp2 + prices[i] + "<br>";
+        // }
+        // document.getElementById("cname").innerHTML = b.innerHTML;
+        // document.getElementById("cprice").innerHTML = c.innerHTML;
+        var temp1 = '<table id="carttable">';
+        temp1 += "<tr>";
+        temp1 += "<th>item</th>";
+        temp1 += "<th>Price</th>";
+
+        // temp1 += "<th>Action</th>";
+        temp1 += "</tr>";
+        var n = meds.length;
+        for (i = 0; i < n; i++) {
+            temp1 += "<tr>";
+            temp1 += "<td>" + meds[i] + "</td>";
+
+            temp1 += "<td>" + prices[i] + "</td>";
+
+
+            // temp1 += '<td><button onclick="add1(this)" >+</button></td>';
+            // temp1 += '<td><button onclick="add2(this)" >-</button></td>';
+            // temp1 += '<td><button id="qty" >'+quantity[i]+'</button></td>';
+            temp1 += "</tr>";
+
+        }
+        temp1 += "<tr>";
+        temp1 += "<td>" + "Total Price" + "</td>";
+        temp1 += "<td>" + total + "</td>";
+        temp1 += "</tr>";
+
+        temp1 += "</table>";
+        temp1 += "</table>";
+        document.getElementById("cname").innerHTML = temp1;
+    }
+    function med5(pick2) {
+        var alltr = pick2.parentElement.parentElement;
+        var alltd = alltr.getElementsByTagName("td");
+        var p = alltr.rowIndex;
+
+        alltr.getElementsByTagName("td")[2].style.visibility="hidden";
+
+        // var a = document.getElementById("tale");
+        var b = alltr.getElementsByTagName("td")[0];
+        var c = alltr.getElementsByTagName("td")[1];
+        meds.push(b.innerHTML);
+        prices.push(c.innerHTML);
+
+        total = total + parseInt(c.innerHTML);
+        // alert(meds)
+        // alert(temp1)
+        // for (i = 0; i < l; i++) {
+        //     temp1 = temp1 + meds[i] + "<br>";
+        //     temp2 = temp2 + prices[i] + "<br>";
+        // }
+        // document.getElementById("cname").innerHTML = b.innerHTML;
+        // document.getElementById("cprice").innerHTML = c.innerHTML;
+        var temp1 = '<table id="carttable">';
+        temp1 += "<tr>";
+        temp1 += "<th>item</th>";
+        temp1 += "<th>Price</th>";
+
+        // temp1 += "<th>Action</th>";
+        temp1 += "</tr>";
+        var n = meds.length;
+        for (i = 0; i < n; i++) {
+            temp1 += "<tr>";
+            temp1 += "<td>" + meds[i] + "</td>";
+
+            temp1 += "<td>" + prices[i] + "</td>";
+
+
+            // temp1 += '<td><button onclick="add1(this)" >+</button></td>';
+            // temp1 += '<td><button onclick="add2(this)" >-</button></td>';
+            // temp1 += '<td><button id="qty" >'+quantity[i]+'</button></td>';
+            temp1 += "</tr>";
+
+        }
+        temp1 += "<tr>";
+        temp1 += "<td>" + "Total Price" + "</td>";
+        temp1 += "<td>" + total + "</td>";
+        temp1 += "</tr>";
+
+        temp1 += "</table>";
+        temp1 += "</table>";
+        document.getElementById("cname").innerHTML = temp1;
+    }
+    function sch() {
+        if (btn1.style.color == "black" && btn2.style.color == "black" && btn3.style.color == "black" && btn4.style.color == "black") {
+            sch1();
+        }
+        else if (btn1.style.color == "red") {
+            sch2();
+        } else if (btn2.style.color == "red") {
+            sch3();
+        } else if (btn3.style.color == "red") {
+            sch4();
+        } else if (btn4.style.color == "red") {
+            sch5();
+        }
+    }
+    function sch1() {
+        var s = document.getElementById("name").value;
+        var table = document.getElementById("tale");
+        var alltr = table.getElementsByTagName("tr")
+        // alert(s)        // alert(alltr.innerHTML)
+
+
+        var count = table.rows.length;
+        // alert(count);
+        var n = s.length;
+
+        for (i = 1; i < count + 1; i++) {
+            var td = alltr[i].getElementsByTagName("td")[0];
+
+            var name = td.innerHTML;
+            var l = name.substr(0, n);
+            if (s == l) {
+
+                alltr[i].style.display = "";
+
+            }
+            else {
+                alltr[i].style.display = "none";
+            }
+        }
+    }
+    function sch2() {
+        var s = document.getElementById("name").value;
+        var table = document.getElementById("tale1");
+        var alltr = table.getElementsByTagName("tr")
+        // alert(s)        // alert(alltr.innerHTML)
+
+
+        var count = table.rows.length;
+        // alert(count);
+        var n = s.length;
+
+        for (i = 1; i < count + 1; i++) {
+            var td = alltr[i].getElementsByTagName("td")[0];
+
+            var name = td.innerHTML;
+            var l = name.substr(0, n);
+            if (s == l) {
+
+                alltr[i].style.display = "";
+
+            }
+            else {
+                alltr[i].style.display = "none";
+            }
+        }
+
+    }
+    function sch3() {
+        var s = document.getElementById("name").value;
+        var table = document.getElementById("tale2");
+        var alltr = table.getElementsByTagName("tr")
+        // alert(s)        // alert(alltr.innerHTML)
+
+
+        var count = table.rows.length;
+        // alert(count);
+        var n = s.length;
+
+        for (i = 1; i < count + 1; i++) {
+            var td = alltr[i].getElementsByTagName("td")[0];
+
+            var name = td.innerHTML;
+            var l = name.substr(0, n);
+            if (s == l) {
+
+                alltr[i].style.display = "";
+
+            }
+            else {
+                alltr[i].style.display = "none";
+            }
+        }
+
+    }
+    function sch4() {
+        var s = document.getElementById("name").value;
+        var table = document.getElementById("tale3");
+        var alltr = table.getElementsByTagName("tr")
+        // alert(s)        // alert(alltr.innerHTML)
+
+
+        var count = table.rows.length;
+        // alert(count);
+        var n = s.length;
+
+        for (i = 1; i < count + 1; i++) {
+            var td = alltr[i].getElementsByTagName("td")[0];
+
+            var name = td.innerHTML;
+            var l = name.substr(0, n);
+            if (s == l) {
+
+                alltr[i].style.display = "";
+
+            }
+            else {
+                alltr[i].style.display = "none";
+            }
+        }
+
+    }
+    function sch5() {
+        var s = document.getElementById("name").value;
+        var table = document.getElementById("tale4");
+        var alltr = table.getElementsByTagName("tr")
+        // alert(s)        // alert(alltr.innerHTML)
+
+
+        var count = table.rows.length;
+        // alert(count);
+        var n = s.length;
+
+        for (i = 1; i < count + 1; i++) {
+            var td = alltr[i].getElementsByTagName("td")[0];
+
+            var name = td.innerHTML;
+            var l = name.substr(0, n);
+            if (s == l) {
+
+                alltr[i].style.display = "";
+
+            }
+            else {
+                alltr[i].style.display = "none";
+            }
+        }
+
+    }
+    function pass() {
+        var bloodpassword = document.getElementById("password").value;
+        if (password != bloodpassword) {
+            alert("ENTER CORRECT PASSWORD ")
+        }
+        else {
+            count++;
+        }
+
+    }
+    function buy() {
+        if (count == 1) {
+            if (total == 0) {
+                alert("ADD SOMETHING TO THE CART")
+            }
+            else {
+                var billname = document.getElementById("billname").value;
+                var billaddress = document.getElementById("billaddress").value;
+                var pre = document.getElementById("pre");
+                var post = document.getElementById("post");
+                pre.style.display = "none"
+                post.style.display = "block"
+                alert("congrats!order placed")
+                var date = new Date();
+                document.getElementById("post1").innerHTML = "NAME:  " + billname;
+                document.getElementById("post2").innerHTML = "ADDRESS:  " + billaddress;
+                document.getElementById("post3").innerHTML = "PRICE:  " + total;
+                document.getElementById("post5").innerHTML = "DATE:  " + date;
+                document.getElementById("post4").innerHTML = "PAYMENT MODE:  " + "CASH ON DELIVERY";
+
+                localStorage.setItem("billname", billname);
+                localStorage.setItem("billadress", billaddress);
+                localStorage.setItem("billprice", total);
+                localStorage.setItem("billdate", date);
+
+            }
+        }
+        else{
+            alert("FILL UP THE FORM WITH CORRECT DETAILS")
+        }
+    }
+    // var date=d.getDate();
+    // alert(date)
+
+    var username = localStorage.getItem("username");
+    document.getElementById("navbar").innerHTML = username;
+    var password = localStorage.getItem("password");
+    var count = 0;
+
+
+</script>
+
+</html>

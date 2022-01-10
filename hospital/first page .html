@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST PAGE</title>
+    <style>
+        body {
+            background-color: black;
+            background: url(pictures/mainpage2.png);
+            background-repeat: no-repeat;
+            /* opacity: 0.3; */
+            background-size: 100% 100%;
+           
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+
+        .header {
+            position: sticky;
+            top:0px;
+            background-color: rgba(105, 107, 231, 0.897);
+            height: 50px;
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        #navbar {
+            /* border-color: 2px solid rgb(12, 12, 12); */
+            float: right;
+            font-size: large;
+            /* background-color: black; */
+            border-radius: 12px;
+            color: white;
+            margin-right: 5%;
+            margin-top: 10px;
+            padding: 5px;
+            /* border: 2px solid red; */
+            /* height: 30px; */
+        }
+
+        .mid {
+            height: 40px;
+            width: 20%;
+            border-radius: 12px;
+            box-shadow: 2px 3px blue;
+
+            background-color: whitesmoke;
+            color: black;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 15px;
+            box-shadow: 2px 3px blue;
+        }
+        
+
+        .rightnav {
+            float: right;
+        }
+
+        #rightnav {
+            height: 26px;
+            background-color: black;
+            /* width: 60%; */
+            padding: 5px;
+            color: white;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+
+        .left {
+            height: 540px;
+            margin-top: 100px;
+            margin-left: 5%;
+            /* background-color: rgb(97, 91, 91); */
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: -2px -3px  blue;
+           
+            position:sticky ;
+            top: 220px;
+
+        }
+
+        .right {
+            height: 1500px;
+            margin-top: 100px;
+            margin-right: 5%;
+            /* background-color: rgb(97, 91, 91);
+             */
+             border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: -2px -3px  blue;
+            margin-left: 5%;
+
+
+        }
+
+        .items {
+            height: 50px;
+            background-color: yellow;
+            border-radius: 30px;
+            padding: 5px;
+            color: black;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            margin-top: 60px;
+            /* margin-left: 1%; */
+        }
+
+        .total {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        #about {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            color: white;
+
+        }
+
+        #facilities {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            color: white;
+
+        }
+        #facilities1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: white;
+
+        }
+
+        .aboutitems {
+            height: 240px;
+            width: 80%;
+            background-color: burlywood;
+            border-radius: 20px;
+            margin-left: 10%;
+            margin-top: 5%;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        #text {
+            margin-top: 25%;
+        }
+
+        .heading {
+            /* height: auto; */
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 20px;
+            /* background-color: rgb(0, 0, 0); */
+            background-color: rgb(6, 61, 243);
+
+            /* margin-top: 25%; */
+            margin-left: 2%;
+            width: 30%;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            height: 30px;
+            margin: auto;
+            background-color: rgb(113, 113, 241);
+            margin-top: 40%;
+            color: black;
+            border-radius: 20px;
+            padding: 1%;
+        }
+        #btnp {
+            height: 30px;
+            margin: auto;
+            background-color: rgb(113, 113, 241);
+            margin-top: 5%;
+            color: black;
+            border-radius: 20px;
+            padding: 1%;
+        }
+        #blood{
+            height: 150px;
+        }
+
+        .first {
+            height: 50px;
+            background-color: brown;
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: auto;
+            border-radius: 12px;
+            width: 70%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0px;
+            margin-bottom: 10px;
+
+
+        }
+        .first1 {
+            height: 50px;
+            background-color: rgb(113, 113, 241);
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: auto;
+            border-radius: 12px;
+            width: 13%;
+            margin: auto;
+            margin-left: 35%;
+            margin-right: 10%;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            text-align: center;
+
+
+        }
+
+        .second {
+            height: 50px;
+            background-color: brown;
+            margin: auto;
+            width: 50%;
+            border-radius: 12px;
+            margin-left: 10%;
+            margin-right: 10%;
+
+        }
+        .btn:hover{
+            background-color: black;
+            color: whitesmoke;
+        }
+        #covid{
+            background-image: url(pictures/covid4.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            color: white;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            /* opacity: 0.1; */
+        }
+        #admit{
+            background-image: url(pictures/admit-patient.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            color: black;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+           
+        }
+        #mediclaim{
+            background-image: url(pictures/mediclaim.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            color: white;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+           
+        }#medistore{
+            background-image: url(pictures/medistore.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            color: black;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+           
+        }#ambulance{
+            background-image: url(pictures/ambulance.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            color: black;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+           
+        }
+        #appointment{
+            background-image: url(pictures/appointment.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            color: black;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+           
+        }
+        #about1{
+            background-image: url(pictures/hospital2.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+           
+        }
+        #about2{
+            background-image: url(pictures/hospital1.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:black;
+
+           
+        }
+        #about3{
+            background-image: url(pictures/hospital-celebration.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:black;
+
+           
+        }
+        #text{
+            color:black;
+            background-position: 40%;
+            font-weight: bolder;
+            /* background-color:  black; */
+
+        }
+        #blood{
+            background-image: url(pictures/COVIDBloodDonate_cchn.jpg);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:black;
+
+        }#dashboard1{
+            background-image: url(pictures/dashboard.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:black;
+            
+
+        }
+        #treatment{
+            background-image: url(pictures/treatment1.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:white;
+
+
+        }#health{
+            background-image: url(pictures/health2.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:white;
+
+
+        }#training{
+            background-image: url(pictures/training0.png);
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:black;
+
+
+        }#contactus{
+            background-image: url(pictures/contact.png);
+            background-repeat: no-repeat;
+            background-size: 20% 100%;
+            image-resolution: 3dpi;
+            /* font-size: xx-large; */
+            font-weight: bolder;
+            color:white;
+            background-color: blueviolet;
+
+
+        }
+        #img{
+            width: 10%;
+            height: 100%;
+        }
+    </style>
+</head>
+<!-- features:
+1>ambulance call
+2>covid data collect
+3>registration login system
+4>online doctor consultation
+5>blood 
+6>medical services
+7>treatments
+8>fee structure and hospital facilities
+9>mediclaim facilities
+10>training and reasearches
+11>medical checkup 
+12>doctor or patient dashboard -->
+
+<body>
+    <div class="header">
+
+        <img id="img" src="pictures/logo.png" alt="logo">
+
+        <span id="navbar">
+            <button id="rightnav" onclick="login()">LOGIN</button>
+            <button id="rightnav" onclick="register()">REGISTER</button>
+        </span>
+    </div>
+
+    <div class="mid">MEDTECH</div>
+    <div class="total">
+        <div class="left">
+            <div class="items"class="btn" id="treatment" onclick="treatments()">TREATMENTS</div>
+            <div class="items"class="btn" id="health" onclick="health()">HEALTH CAMPAIGN</div>
+            <div class="items"class="btn" id="training" onclick="training()">TRAINING</div>
+            <div class="items"class="btn" id="contactus" onclick="contact()">CONTACT US</div>
+        </div>
+        <div class="right">
+            <DIV class="heading">ABOUT MEDTECH</DIV>
+            <div id="about">
+                
+                <div class="aboutitems" id="about1" > MULTI SPECIALITY HOSPITAL<BR>175 BEDS<BR>700 MEMBERS<BR>
+
+                        Largest network of the world’s finest and brightest medical experts who provide compassionate
+                        care using outstanding expertise and advanced technology.</div>
+                <div class="aboutitems"id="about2">our vision is to be the most well regarded healthcare provider in India committed to the highest standards of clinical excellence and patient care, supported by latest technology and cutting edge research.</div>
+                <div class="aboutitems"id="about3">celebrating Opening Week.Visit Our Website And Get Loved. </div>
+            </div>
+            <div id="dashboard">
+            <DIV class="heading">DASHBOARD</DIV>
+                
+                <div class="aboutitems" id="dashboard1">
+                    <div class="first">DOCTOR NAME:</div>
+                    <div class="first">
+                        <div class="second">BLOOD GROUP:</div>
+                        <div class="second">PHONE NUMBER:</div>
+                    </div>
+                    <button CLASS="first1" class="btn">GO TO DASHBOARD</button>
+                </div>
+
+            </div>
+            <DIV class="heading">FACILITIES</DIV>
+
+            <div id="facilities">
+                <div class="aboutitems" id="medistore"> <SPAN class="heading">MEDISTORE</SPAN> <br><BR>GET ALL MEDICINES
+                    AT BEST PRICES<BR><button class="btn" onclick="medistore()" >SHOP NOW</button></div>
+                <div class="aboutitems" id="ambulance"> <SPAN class="heading">AMBULANCE</SPAN><br> <BR>BOOK AMBULANCE AT
+                    LOW PRICES AT A LESSER TIME<BR><button class="btn" onclick="ambulance()" >BOOK NOW</button></div>
+                <div class="aboutitems" id="appointment"> <SPAN class="heading">APPOINT A DOCTOR</SPAN><br> <BR>GET
+                    EVERY TYPE OF DOCTORS AT LESSER PRICE <br><button class="btn" onclick="appointment()">APPOINT NOW</button></div>
+            </div>
+            <DIV class="heading">PATIENT SECTION</DIV>
+
+            <div id="facilities">
+                <div id="mediclaim" class="aboutitems"><SPAN class="heading" >MEDICLAIM</SPAN><br> <BR>GET BEST POLICY AND APPLY AT YOUR BILL<BR><button class="btn" onclick="mediclaim()">APPLY NOW</button></div>
+                <div id="admit" class="aboutitems"><SPAN class="heading">ADMITTED PATIENT</SPAN><br> <BR>FIND DETAILS OF YOUR RELATIVE ADMITTED IN THIS HOSPITAL<BR><button class="btn" onclick="patient()">GET DETAILS</button></div>
+                <div id="covid"class="aboutitems"><SPAN class="heading">COVID DATA</SPAN><br> <BR>GET COVID DATA OF INDIA STATE WISE<BR><button class="btn" onclick="covid()">GET DATA</button></div>
+            </div>
+            <DIV class="heading">BLOOD SECTION</DIV>
+            <div id="blood" class="aboutitems"><SPAN class="headingp" > </SPAN><br> <BR>DONATE OR RECIEVE BLOOD AND GET DETAILS <BR><button class="btn" id="btnp" onclick="blood()">DONATE/RECIEVE</button></div>
+
+        </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    // alert("new user!register first")
+    var allbtns = document.getElementsByClassName("btn");
+
+    for(i=0;i<allbtns.length;i++)
+    {
+        allbtns[i].disabled = true;
+    }
+
+    var d=document.getElementById("dashboard");
+    d.style.display="none"
+    document.getElementsByClassName("btn").disabled=true;
+    
+    function register(){
+        window.location="registration.html"
+    }function login(){
+        window.location="login.html"
+    }
+    
+    function appointment(){
+        window.location="appointment.html"
+    }
+    function contact(){
+        window.location="contact us.html"
+    }
+    function treatments(){
+        window.location="treatments.html"
+    }
+    function ambulance(){
+        window.location="ambulance.html"
+    }
+    function medistore(){
+        window.location="medistore.html"
+    }function mediclaim(){
+        window.location="mediclaim.html"
+    }
+    function patient(){
+        window.location="patient admit.html"
+    }
+    function covid(){
+        window.location="covid.html"
+    }
+    function training(){
+        window.location="training.html"
+
+    }
+    function blood(){
+        window.location="blood.html"
+
+    }
+    function health (){
+        window.location="health campaign.html"
+
+    }
+
+    
+    
+</script>
+
+</html>

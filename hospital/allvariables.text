@@ -1,0 +1,26 @@
+name:username
+password:password
+phone number:phone
+age:age
+blood group:bgroup
+address:address
+bill er name:billname
+bill er address:billaddress
+bill er name:billprice
+bill er date:billdate
+ambulance er driver:ambuname;
+ambulance er phone number:ambuphone;
+ambulance er fees:ambufees;
+mediclaim er name:mediname
+mediclaim er bill:medibill
+mediclaim er card number:medicardnumber
+mediclaim er offer :medioffer
+catagory:catagory
+appoint er doctor:appointname;
+appoint er fees:appointfees;
+appoint er date:appointdate;
+appoint er time:appointtime;
+blood donate name: bdname
+blood donate age:bdage
+blood donate group:bdgroup
+blood donate no of bottles:bdbno

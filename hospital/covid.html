@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID DATA</title>
+    <style>
+        body{
+        background-color: black;
+        background-image: url(pictures/covid3.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        color: rgb(241, 0, 0);
+    }
+    .header{
+        
+        background-color: rgba(105, 107, 231, 0.897);
+        height: 50px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    #navbar{
+        /* border-color: 2px solid rgb(12, 12, 12); */
+        float: right;
+        font-size: large;
+        background-color: black;
+        border-radius: 12px;
+        color: white;
+        margin-right: 5%;
+         margin-top:10px ;
+         padding: 5px;
+         /* border: 2px solid red; */
+    }
+    .mid{
+        height: 40px;
+        width: 20%;
+        border-radius: 12px;
+        background-color: whitesmoke;
+        color: black;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 15px;
+        visibility: hidden;
+    }
+    .midtop{
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        width: 80%;
+        margin: auto;
+        margin-top: 60px;
+        /* visibility: ; */
+        visibility: visible
+
+    }
+    #name{
+        height: 30px;
+        border-radius: 15px;
+        margin-right: 2%;
+        padding-left: 3%;
+    }
+    .search{
+        height:36px;
+        border-radius: 15px;
+        background-color: rgb(46, 78, 223);
+        color: white;
+
+    }
+    #midend{
+        height: 500px;
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+        /* background-color: rgb(90, 85, 85); */
+    }
+    .box{
+        color: white;
+        font-weight: bolder;
+        margin: auto;
+        /* padding-top: 2px; */
+        height: 50px;
+        width: 80%;
+        /* background-color: rgb(233, 190, 233); */
+        margin-top: 3%;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 3px 3px blue;
+        border: 2px solid white;
+        
+    }
+    #img{
+            width: 10%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <img id="img" src="pictures/logo.png" alt="logo">
+        
+        
+        <span id="navbar">sayandip</span>
+    </div>
+
+    <div class="mid">COVID DATA </div>
+    <div class="midtop"><input type="text" placeholder="enter state name" id="name" >
+    <button class="search" onclick="sch()">Search</button></div>
+    <div id="midend">
+        <div class="box" id="show1"></div>
+        <div class="box" id="show2"></div>
+        <div class="box" id="show3"></div>
+        <div class="box" id="show4"></div>
+        <div class="box" id="show5"></div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var show=document.getElementById("midend");
+    show.style.visibility="hidden"
+    
+    function sch()
+        {
+            var resp = document.getElementById("response");
+            show.style.visibility="visible"
+            $.ajax({
+                url:"https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise",
+                method : "get",
+                data : {},
+                success : function(response)
+                {
+                    var count=0;
+
+                    var state=document.getElementById("name").value;
+
+                    var statearr = response.data.statewise;
+                    // var temp = "";
+                    for(i=0;i<response.data.statewise.length; i++)
+                    {
+                        // temp = temp + stateArr[i].state  + "<br>";
+                        if(state==statearr[i].state){
+                            count=1;
+                            document.getElementById("show1").innerHTML="STATE: "+statearr[i].state;
+                            document.getElementById("show2").innerHTML="CONFIRMED: "+statearr[i].confirmed;
+                            document.getElementById("show3").innerHTML="RECOVERED: "+statearr[i].recovered;
+                            document.getElementById("show4").innerHTML="DEATH: "+statearr[i].deaths;
+                            document.getElementById("show5").innerHTML="ACTIVE: "+statearr[i].active;
+                            break;
+    
+
+
+                        }
+                       
+                    }
+                    // resp.innerHTML = temp;
+                    if(count==0){
+                        alert("STATE NOT FOUND");
+                        document.getElementById("show1").innerHTML="";
+                        document.getElementById("show2").innerHTML="";
+                        document.getElementById("show3").innerHTML="";
+                        document.getElementById("show4").innerHTML="";
+                        document.getElementById("show5").innerHTML="";
+                    }
+                }
+            })
+
+           
+        }
+
+</script>
+</html>

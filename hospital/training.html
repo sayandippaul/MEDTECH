@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREATMENTS</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url(pictures/training.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+
+        .header {
+
+            background-color:  rgba(105, 107, 231, 0.897)
+            ;
+            height: 50px;
+            width: 100%;
+            margin-top: 0px;
+            /* position: sticky; */
+        }
+
+        #navbar {
+            /* border-color: 2px solid rgb(12, 12, 12); */
+            float: right;
+            font-size: large;
+            background-color: black;
+            border-radius: 12px;
+            color: white;
+            margin-right: 5%;
+            margin-top: 10px;
+            padding: 5px;
+            /* border: 2px solid red; */
+        }
+
+        .mid {
+            height: 40px;
+            width: 20%;
+            border-radius: 12px;
+            background-color: whitesmoke;
+            color: black;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+            /* margin-top: 15px; */;
+            box-shadow: 2px 2px blue;
+
+        }
+        .midmid{
+    color: white;
+}
+.box{
+    /* position: absolute; */
+    float: right;
+    height: 120px;
+    width: 80%;
+    /* background-color: rgb(2, 1, 31); */
+    border: 2px solid black;
+    box-shadow: 2px 2px blue;
+    margin: 30px;
+    border-radius: 10px;
+    margin-right: 10%;
+    text-align: center;
+    align-items: center;
+    font-size: smaller;
+    margin-top: 15px;
+    color: red;
+    
+    font-weight: bolder;
+            /* font-size: 23px */
+
+}
+#img{
+            width: 10%;
+            height: 100%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+    
+        <img id="img" src="pictures/logo.png" alt="logo">
+        
+        
+        <span id="navbar">USER</span>
+    </div>
+
+    <div class="mid">TRAINING AND COURSES</div>
+    <div class="midmid">
+        <div class="box">MEDICAL(MBBS)<br>Bachelor of Medicine and Bachelor of Surgery (MBBS), is a professional degree in medical science. After completing MBBS course and obtaining the degree<br>CONTACT NOW  :  Dr.Diganta Banerjee(7003123456)</div>
+        <div class="box" >NURSING<br>nursing, profession that assumes responsibility for the continuous care of the sick, the injured, the disabled, and the dying. Nursing is also responsible for encouraging the health of individuals, families, and communities in medical and community settings..<br>CONTACT NOW  :  Dr.nirupama banerjee(6289295396)
+        </div>
+        <div class="box">PARAMEDICAL<br> paramedical personnel, also called Paramedics, health-care workers who provide clinical services to patients under the supervision of a physician.<br><br>CONTACT NOW  :  Dr.Arup Dey(6289295316)</div>
+        <div class="box">PHARMACY<br>Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs..<br>CONTACT NOW  :  Dr.Sagar Das(6289295316)</div>
+        
+    </div>
+   
+    
+</body>
+<script>
+    var username = localStorage.getItem("username");
+    document.getElementById("navbar").innerHTML = username;
+    
+</script>
+</html>

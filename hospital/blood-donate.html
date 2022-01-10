@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD</title>
+    <style> body{
+        background-color: black;
+        background-image: url(pictures/blood1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        color: white;
+    }
+    .header{
+        
+        background-color: rgb(255, 0, 21);
+        height: 50px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    #navbar{
+        /* border-color: 2px solid rgb(12, 12, 12); */
+        float: right;
+        font-size: large;
+        background-color: black;
+        border-radius: 12px;
+        color: white;
+        margin-right: 5%;
+         margin-top:10px ;
+         padding: 5px;
+         border: 2px solid red;
+    }
+    .mid{
+        height: 40px;
+        width: 20%;
+        border-radius: 12px;
+        background-color: whitesmoke;
+        color: black;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 15px;
+        box-shadow: 2px 5px red;
+    }
+    .fom{
+        display: flex;
+        flex-direction: column;
+        
+        margin: auto;
+        margin-top: 50px;
+
+    }
+    .item{
+        height:50px;
+        width:60%;
+        margin: auto;
+        padding:6px ;
+        margin-top: 10px;
+        border-radius: 11px;
+        color: white;
+        background: none;
+        box-shadow: 2px 2px red;
+        
+    }
+    ::placeholder{
+        color: red;
+        font-weight: bolder;
+    }
+    #sub{
+        margin: auto;
+        margin-top: 20px;
+        padding: 5px;
+        color: black;
+        background-color: red;
+        width: 10%;
+        height: 40px;
+        border-radius: 30px;
+    }
+    #text{
+        margin-left: 20%;
+    }
+    #age{
+        color: black;
+    }
+    #img{
+            width: 10%;
+            height: 100%;
+        }
+   </style>
+</head>
+<body>
+    <div class="header">
+    
+        <img id="img" src="pictures/logo.png" alt="logo">
+        
+        
+        <span id="navbar">sayandip</span>
+    </div>
+
+    <div class="mid">DONATE</div>
+    <div class="fom">
+        <input type="text" class="item"id="name" placeholder="ENTER DONOR NAME HERE">
+        <input type="number" class="item"id="age" onblur="age()" placeholder="ENTER YOUR AGE HERE">
+        <input type="number" class="item"id="no" onblur="phone()" placeholder="ENTER YOUR PHONE NUMBER">
+        <input type="number" class="item"id="bno" onblur="bno()" placeholder="ENTER AMOUNT OF BOTTLES(1 LIT)">
+        <input type="text" class="item"id="group"onblur="blood()"  placeholder="ENTER YOUR BLOOD GROUP">
+        <input type="textarea" class="item"id="problem" placeholder="ENTER RECENT HEALTH PROBLEMS">
+        <span id="text">ENTER LAST DATE OF BLOOD DONATION: </span>
+        <input type="date" class="item"id="date" onblur="date1()" placeholder="">
+        <input type="text" class="item"id="password" onblur="pass()" placeholder="ENTER THE PASSWORD ">
+        <button id="sub" onclick="sub()">DONATE NOW</button>
+        <!-- <button id="sub" onclick="back()">Go Back</button> -->
+    </form></div>
+     
+</body>
+
+<script>
+    var username=localStorage.getItem("username");
+    var password=localStorage.getItem("password");
+    document.getElementById("navbar").innerHTML=username;
+    var count=0;
+    // var i=293;
+    var i=localStorage.getItem("donorvalue1");
+    // alert(i)
+     function date1(){
+        var gdate=document.getElementById("date").value;
+        // alert(gdate);
+        gdate = new Date(gdate);
+        // alert(diff)
+    // var tdate = new Date("
+    var d = new Date();
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    var tdate=[year, month, day].join('-');
+
+    tdate = new Date(tdate);
+    // var tdate= 
+    var dif=tdate.getTime()-gdate.getTime();
+    
+    var diff=dif/ (1000 * 3600 * 24);
+    // alert(diff);
+    if(diff<90 && diff>0){
+        alert("you must donate after 3 months ")
+    }
+    else if(diff<0){
+        alert("prevoius donation date must be before today")
+    }
+
+    else{
+        count++;
+    }
+     }
+    function sub() {
+        
+        // alert(count);
+        if(count==5){
+            
+        var dr="d";
+    localStorage.setItem("donaterecieve",dr );
+
+    var drname=document.getElementById("name").value
+    var drage=document.getElementById("age").value
+    var drbno=document.getElementById("bno").value
+    var drgroup=document.getElementById("group").value
+    window.location="blood.html"
+    localStorage.setItem("bdname1",drname );
+    localStorage.setItem("bdage1",drage );
+    localStorage.setItem("bdbno1",drbno );
+    localStorage.setItem("bdgroup1",drgroup );
+    i++;
+    localStorage.setItem("donorvalue1",i );
+    
+        }
+        else{
+            alert("enter correct details")
+        }
+    }
+    function age() {
+            
+            var b=document.getElementById("age").value;
+            
+            if(b<0||b>150){
+                alert("enter valid age");
+            }
+            else{
+                count++;
+            }
+            
+        }
+    function pass() {
+        var bloodpassword= document.getElementById("password").value;
+        if(password!=bloodpassword){
+            alert("ENTER CORRECT PASSWORD ")
+        }
+        else{
+                count++;
+            }
+            
+    }
+    function phone() {
+
+var a=document.getElementById("no").value;
+var n=a.length;
+// alert(n)
+// alert(a[0])
+if(n!=10 || a[0]==1 || a[0]==3 || a[0]==4 || a[0]==0|| a[0]==4|| a[0]==5)
+{
+    alert("enter valid number")
+}
+else{
+        count++;
+    }
+    
+}
+    function bno() {
+        var bottle=document.getElementById("bno").value;
+        if(bottle<1)
+        {
+            alert("enter valid number of bottles")
+        }
+        else{
+            count++
+        }
+    }
+    function back(){
+        location.replace("http://127.0.0.1:5500/web%20devolopment/project/hospital/blood%20.html")
+    }
+    
+</script>
+</html>
