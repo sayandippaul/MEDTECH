@@ -152,26 +152,29 @@
     </div>
     
 
+    
     <div id="fom1">
-        <input type="text" class="item"id="name1"  placeholder="ENTER YOUR NAME HERE">
-        <input type="text" class="item"id="aged" onblur="age1()" placeholder="ENTER YOUR AGE HERE">
-        <input type="number" class="item"id="no1" onblur="phone1()" placeholder="ENTER YOUR PHONE NUMBER">
-        <input type="text" class="item"id="special" placeholder="ENTER SPECIALITY">
-        <input type="text" class="item"id="address1" placeholder="ENTER CURRENT ADDRESS">
-        <input type="text" class="item"id="group1" onblur="blood1()" placeholder="ENTER YOUR BLOOD GROUP(enter in capital words)">
-        <input type="PASSWORD" class="item"id="password1" placeholder="ENTER THE PASSWORD ">
-        <input type="text" class="item"id="confirm1"onblur="pass1()" placeholder="CONFIRM PASSWORD">
+        <input type="text" class="item"id="name1"  placeholder="ENTER YOUR NAME HERE" name="name">
+        <input type="text" class="item"id="aged" onblur="age1()" placeholder="ENTER YOUR AGE HERE" name="age">
+        <input type="number" class="item"id="no1" onblur="phone1()" placeholder="ENTER YOUR PHONE NUMBER" name="phone">
+        <input type="text" class="item"id="special" placeholder="ENTER SPECIALITY" name="speciality">
+        <input type="text" class="item"id="address1" placeholder="ENTER CURRENT ADDRESS" name="address">
+        <input type="text" class="item"id="group1" onblur="blood1()" placeholder="ENTER YOUR BLOOD GROUP(enter in capital words)" name="blood">
+        <input type="PASSWORD" class="item"id="password1" placeholder="ENTER THE PASSWORD " name="password">
+        <input type="PASSWORD" class="item"id="confirm1"onblur="pass1()" placeholder="CONFIRM PASSWORD">
         <button id="sub" onclick="reg1()">REGISTER</button>
         <!-- <button id="sub" onclick="back()">Go Back</button> -->
     </form></div>
+
+    
     <div id="fom">
-        <input type="text" class="item"id="name2" placeholder="ENTER YOUR NAME HERE">
-        <input type="text" class="item"id="agep" onblur="age2()" placeholder="ENTER YOUR AGE HERE">
-        <input type="number" class="item"id="no2" onblur="phone2()" placeholder="ENTER YOUR PHONE NUMBER">
-        <input type="text" class="item"id="address2" placeholder="ENTER CURRENT ADDRESS">
-        <input type="text" class="item"id="group2" onblur="blood2()"placeholder="ENTER YOUR BLOOD GROUP(enter in capital words)">
-        <input type="PASSWORD" class="item"id="password2" placeholder="ENTER THE PASSWORD ">
-        <input type="text" class="item"id="confirm2" onblur="pass2()"placeholder="CONFIRM PASSWORD">
+        <input type="text" class="item"id="name2" placeholder="ENTER YOUR NAME HERE" name="name_p">
+        <input type="text" class="item"id="agep" onblur="age2()" placeholder="ENTER YOUR AGE HERE" name="age_p">
+        <input type="number" class="item"id="no2" onblur="phone2()" placeholder="ENTER YOUR PHONE NUMBER" name="phone_p">
+        <input type="text" class="item"id="address2" placeholder="ENTER CURRENT ADDRESS" name="address_p">
+        <input type="text" class="item"id="group2" onblur="blood2()"placeholder="ENTER YOUR BLOOD GROUP(enter in capital words)" name="blood_p">
+        <input type="PASSWORD" class="item"id="password2" placeholder="ENTER THE PASSWORD " name="password_p">
+        <input type="PASSWORD" class="item"id="confirm2" onblur="pass2()"placeholder="CONFIRM PASSWORD">
         <button id="sub" onclick="reg2()">REGISTER</button>
         <!-- <button id="sub" onclick="back()">Go Back</button> -->
     </form></div>
@@ -301,7 +304,7 @@ function pass1() {
         var n1= document.getElementById("password1").value;
         var n2= document.getElementById("confirm1").value;
         if(n1!=n2){
-            alert("confirm password should be same with password ")
+            alert("confirm password should be same as enterred password ")
         }
         else{
                 count1++;
@@ -312,7 +315,7 @@ function pass1() {
         var n1= document.getElementById("password2").value;
         var n2= document.getElementById("confirm2").value;
         if(n1!=n2){
-            alert("confirm password should be same with password ")
+            alert("confirm password should be same as enterred password ")
         }
         else{
                 count2++;

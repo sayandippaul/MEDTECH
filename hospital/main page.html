@@ -154,6 +154,16 @@ padding: 5px;
             text-align: center;
             padding-top: 10%;
         }
+        .aboutitems1 {
+            height: 240px;
+            width: 200%;
+            background-color: burlywood;
+            border-radius: 20px;
+            margin-left: 10%;
+            margin-top: 5%;
+            text-align: center;
+            padding-top: 10%;
+        }
 
         #text {
             margin-top: 25%;
@@ -403,6 +413,13 @@ padding: 5px;
             width: 10%;
             height: 100%;
         }
+        #chn{
+            margin-left: 150%;
+            height: 40px;
+            width: 80px;
+            margin-top: 40%;
+            color: black;
+        }
     </style>
 </head>
 <!-- features:
@@ -442,12 +459,12 @@ padding: 5px;
             <DIV class="heading">ABOUT MEDTECH</DIV>
             <div id="about">
                 <!-- ABOUT HOSPTAL: -->
-                <div class="aboutitems" id="about1"><span id="text"> MULTI SPECIALITY HOSPITAL<BR>175 BEDS<BR>700 MEMBERS<BR>
+                <div class="aboutitems1" id="about1"><span id="text">   WELCOME<BR>
 
-                        Largest network of the world’s finest and brightest medical experts who provide compassionate
-                        care using outstanding expertise and advanced technology.</span></div>
-                        <div class="aboutitems" id="about2">our vision is to be the most well regarded healthcare provider in India committed to the highest standards of clinical excellence and patient care, supported by latest technology and cutting edge research.</div>
-                        <div class="aboutitems" id="about3">celebrating Opening Week.Visit Our Website And Get Loved. </div>
+                        </span></div>
+                        <button id="chn" onclick="change()">change</button>
+                        <!-- <div class="aboutitems" id="about2"></div>
+                        <div class="aboutitems" id="about3"></div> -->
                     </div>
             <div id="dashboard">
             <DIV class="heading">DASHBOARD</DIV>
@@ -533,6 +550,15 @@ padding: 5px;
     }
     function dashboard(){
         window.location="dashboard.html"
+    }var i=0;
+    function change(){
+        if(i>3){
+            i=0;
+        }
+        const cars=["our vision is to be the most well regarded healthcare provider in India committed to the highest standards of clinical excellence and patient care, supported by latest technology and cutting edge research."," MULTI SPECIALITY HOSPITAL<BR>175 BEDS<BR>700 MEMBERS","celebrating Opening Week.Visit Our Website And Get Loved. ","Largest network of the world’s finest and brightest medical experts who provide compassionate care using outstanding expertise and advanced technology."]
+        document.getElementById("text").innerHTML=cars[i];
+        i++;
+        
     }
     
    
@@ -549,3 +575,7 @@ padding: 5px;
 </script>
 
 </html>
+
+
+
+<!-- Razorpay account create setting api key generate rajarpay checkout js -->

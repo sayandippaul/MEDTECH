@@ -1,68 +1,80 @@
-WELCOME TO MEDTECH.
-HERE WE HAVE CREATED A PROJECT ON MEDTECH HOSPITAL.
-WE HAVE TRIED TO MAKE ALL OVER THINGS AND TO COVER ALL THE POINTS WHICH MAKES A HOSPITAL "ALL IN ONE".
-FACILITIES:HERE,THIS WEBSITE HAVE 
-1>MEDICAL STORE:WE CAN PURCHASE MEDICINES FROM THIS STORE ONLINE.
-2>DOCTOR APPOINTMENT:WE CAN CONSULT OR APPOINT A DOCTOR AS OUR NEED,FEES TIMING ALL WILL BE RECORDED.
-3>COVID DATA:WE CAN GET RECENT COVID DATA FOR EVERY STATE IN INDIA.
-4>BOOKING AMBULANCE:WE CAN BOOK AMBULANCE AS PER THE CONDITION OF THE PATIENT.
-3 TYPES OF AMBULANCE ARE AVAILABLE 
-A>ALS
-B>BLS
-C>PTS
-5>MEDICLAIM FACILITY:YOU CAN APPLY MEDICLAIM POLICY AS ON YOUR CARD NUMBER.
-THE BILL AMOUNT WILL BE DEDUCTED ACCORDING TO YOUR POLICY.  
-6>BLOOD SECTION:
-A>DONATION:YOU CAN DONATE BLOOD TO BLOOD BANK AUTHORITY.TOTAL NUMBER OF DONATORS WILL INCREASE BY 1.
-B>RECIEVE/NEED BLOOD:YOU CAN GET BLOOD AS PER YOUR NEED.LIMITED QUANTITY ARE IN STOCK.
-THE LIST OF BLOOD DONOR AND RECIEVER ARE GIVEN ALSO.
-7>HEALTH CAMPAIGN:
-AUTHORITY IS TRYING TO CONDUCT MORE EVENTS. 
-THE LIST OF PREVIOUSLY HELD AND UPCOMING EVENTS ARE WRIITEN.
-8>TREATMENTS:
-MANY TYPES OF TREATMENTS ARE BEING HELD IN THIS HOSPITAL.
- THE LIST OF TREATMENTS AND THEIR SPECIALIST ARE WRITTEN.
- 9>TRAINING AND COURSES:
- TRAINING AND COURSES LIST ARE GIVEN ALSO.
- 10>PATIENT ADMIT:GET THE DETAILS OF ADMITTED PATIENT LIKE THE ROOM NUMBER, BILL AMOUNT ETC.(DEMO GIVEN) 
- 11>CONTACT US:IF YOU HAVE ANY PROBLEM OR ANY FEEDBACK TO GIVE,THEN FILL THE FORM.
+
+## Welcome To MedTech
 
 
-@JUDGES: PLEASE AT FIRST OPEN "first page.html".THEN REGISTER YOURSELF.
-            THEN USE THE FACILITIES GIVEN IN THE WEBSITE.AFTER DOING EVERY FORM FILLUP,CHECK DASHBOARD YOURSELF 
-            AND IT IS RECOMMENDED TO REGISTER AS A PATIENT........ .ENJOY! .... 
+<p> Here, we have created a project on medtech hospital.</p>
+
+_We have tried to make all over things and to cover all the points which makes a hospital "all in one"._<br>
+
+**_Facilities:_**<br>
+* Medical store: We can purchase medicines from this store online.
+* Doctor appointment: We can consult or appoint a doctor as our need,fees timing all will be recorded.
+* Covid data: We can get recent covid data for every state in india.
+* Booking ambulance: We can book ambulance as per the condition of the patient.
+><p>3 types of ambulance are available <br><br>
+>1. ALS<br>
+>2. BLS<br>
+>3. PLS<br>
+
+</p>
+
+* Mediclaim facility: You can apply mediclaim policy as on your card number.<br>
+__The bill amount will be deducted according to your policy.__  
+* Blood section:
+ - Donation: You can donate blood to blood bank authority.Total number of donators will increase by 1.
+ - Recieve/need blood: You can get blood as per your need. Limited quantity are in stock.<br>
+The list of blood donor and reciever are given also.
+
+* Training and Courses:
+* Treatments
+* Health campaigns
+* Patient admit: Get the details of admitted patient like the room number, bill amount etc.(demo given) 
+ 
+ 
+ #### contact us:
+ >>if you have any problem or any feedback to give,then fill the form.
+
+
+>@judges: please at first open "first page.html".then register yourself.
+            Then use the facilities given in the website.after doing every form fillup,check dashboard yourself 
+            And it is recommended to register as a patient........ .enjoy! .... 
+            
+
 
 
 
   
 
 
-  PROCESS: AT FIRST REGISTER AT THE WEBSITE.ELSE YOU CAN NOT USE THE FACILITIES OF THIS WEBSITE.
-  A>REGISTER AS DOCTOR:IF YOU REGISTER AS DOCTOR THEN YOU HAVE TO MENTION YOUR SPECIALITY.
-                        DASHBOARD OF DOCTOR:
-                        1>YOU CAN CHANGE YOUR USER CREDENTIALS FROM DASBOARD.
-                        2>DOCTORS CAN CHECK THEIR APPOINTMENT FROM DASHBOARD. 
-                        3>DOCTORS CAN SEE THE LIST OF RECENTLY VISITED AND UMCOMING LIST OF PATIENTS.
-                        4>IF A NEW MAIL OR MESSAGE COMES THEN DOCTOR WILL SEE THAT MESSAGES.
-  B>REGISTER AS PATIENT:IF YOU WANT TO USE THE FACILITIESOF THIS HOSPITAL THEN REGISTER AS PATIENT.
-                        DASHBOARD AS PATIENT:
-                        1>YOU CAN CHANGE YOUR USER CREDENTIALS FROM DASBOARD.
-                        2>IF USER APPOINT DOCTOR THEN ,USER CAN CHECK THE DOCTOR'S APPOINTMENT.
-                        3>IF USER BOOK AN AMBULANCE,USER CAN CHECK THE DETAILS OF BOOKING OF THAT AMBULANCE.
-                        4>IF USER BUY SOME MEDICINES FROM MEDISTORE,THEN THE DETAILS WIL BE SHOWN.
-                        5>IF USER DONATE OR RECIEVE BLOOD THEN THE DETAILS WILL BE SHOWN ALSO.
-                        6>THE DETAILS OF APPLIED MEDICLAIM OFFER WILL BE SHOWN .
-    THEN, YOU WILL BE REDIRECTED INTO LOGIN PAGE.CHECK YOUR NAME.
-    PUT THE PASSWORD.PUT CORRECT CATAGORY LOGIN.
-    CONGRATS! YOUR ACCOUNT SUCCESSFULLY CREATED.NOW YOU CAN USE EVERY FACILITIES.
-#THIS WEBSITE IS ONLY FOR LAPTOP, COMPUTER AND PC USE.
+### Process: 
+At first register at the website. Else you can not use the facilities of this website.
+  * _Register as doctor_: If you register as doctor then you have to mention your speciality.
+                        Dashboard of doctor:
+                        1. you can change your user credentials from dasboard.
+                        2. doctors can check their appointment from dashboard. 
+                        3. doctors can see the list of recently visited and umcoming list of patients.
+                        4. if a new mail or message comes then doctor will see that messages.
+  * _Register as patient_: If you want to use the facilitiesof this hospital then register as patient.
+                        Dashboard as patient:
+                        1. you can change your user credentials from dasboard.
+                        2. if user appoint doctor then ,user can check the doctor's appointment.
+                        3. If user book an ambulance,user can check the details of booking of that ambulance.
+                        4. if user buy some medicines from medistore,then the details wil be shown.
+                        5. if user donate or recieve blood then the details will be shown also.
+                        6. the details of applied mediclaim offer will be shown .
+                        
+    Then, you will be redirected into login page.<br>Check your name.<br>
+    Put the password.<br>Put correct catagory login.<br>
+    Congrats! Your account is successfully created.<br>Now you can use every facilities.<br>
+## Disclaimer
+This website is only designed for desktop view.
 
 
 
 
-    TEAM:CRAZY NOOBERS 
-    TEAM MEMBERS:1>SAYANDIP PAUL.
-                 2>ANKIT SENGUPTA.
-                 3>SAPTAPARNEE 
-    IF ANY PROBLEM SEEMS TO BE,THEN CONTACT US -8777425126
-    OR EMAIL US AT-sayandip126@gmail.com              
+    Team:Crazy Noobers 
+    Team members:1>Sayandip Paul.
+                 2>Ankit Sengupta.
+                 3>Saptaparnee 
+    If any problem seems to be,then contact us -8777425126
+    Or email us at-sayandip126@gmail.com              
