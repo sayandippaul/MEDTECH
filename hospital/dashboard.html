@@ -379,7 +379,7 @@
                 <input type="text" class="data" id="no" placeholder="Change Phone number">
                 <input type="text" class="data" id="blood" placeholder="Change blood group">
                 <input type="text" class="data" id="address" placeholder="Change Address">
-                <input type="text" class="data" id="password" placeholder="Change Password">
+                <input type="password" class="data" id="password" placeholder="Change Password">
                 <button class="data" id="change" onclick="changep()">CHANGE DETAILS</button>
 
             </div>
@@ -763,17 +763,42 @@
         var nameage = document.getElementById("age1").value;
         var phone = document.getElementById("no1").value;
         var address = document.getElementById("address1").value;
-        var password = document.getElementById("password1").value;
-        localStorage.setItem("username", name);
+        var passwordn = document.getElementById("password1").value;
+        if(password!=passwordn){
+           var pou= prompt("enter previous password");
+            if(pou!=password){
+                alert("please enter correct previous password");
+                
+            }
+            else{
+                alert("successfully changed");
+                localStorage.setItem("username", name);
         localStorage.setItem("bgroup", bgroup);
         localStorage.setItem("age", age);
         localStorage.setItem("phone", phone);
         //    localStorage.setItem("catagory", catagory);
 
         localStorage.setItem("address", address);
-        localStorage.setItem("password", password);
+        localStorage.setItem("password", passwordn);
         document.getElementById("navbar").innerHTML = name;
 
+            }
+        }
+        else{
+            alert("successfully changed");
+
+            localStorage.setItem("username", name);
+        localStorage.setItem("bgroup", bgroup);
+        localStorage.setItem("age", age);
+        localStorage.setItem("phone", phone);
+        //    localStorage.setItem("catagory", catagory);
+
+        localStorage.setItem("address", address);
+        localStorage.setItem("password", passwordn);
+        document.getElementById("navbar").innerHTML = name;
+
+        }
+        
 
     }
 
